@@ -28,7 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = ["127.0.0.1", 
                  "localhost", 
                  "192.168.0.250", 
-                 "192.168.0.1"]
+                 "192.168.0.1",
+                 "192.168.0.96",]
 
 
 CORS_ALLOWED_ORIGINS = [
