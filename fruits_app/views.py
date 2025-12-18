@@ -23,7 +23,7 @@ def fruits_list(request):
   { "name": "Orange", "weight": 180, "color": "orange" },
   { "name": "Papaya", "weight": 500, "color": "orange/grün" },
   { "name": "Quitte", "weight": 250, "color": "gelb" },
-  { "name": "Rote Johannisbeere", "weight": 5, "color": "rot" },
+  { "name": "Rote Beete", "weight": 30, "color": "rot" },
   { "name": "Satsuma", "weight": 100, "color": "orange" },
   { "name": "Traube", "weight": 5, "color": "grün/rot" },
   { "name": "Ugni-Beere", "weight": 2, "color": "rot" },
