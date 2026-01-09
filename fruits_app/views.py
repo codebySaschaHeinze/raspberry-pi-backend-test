@@ -25,10 +25,10 @@ def fruits_list(request):
   { "name": "Rote Beete", "weight": 30, "color": "rot", "is_ordered": False, "img": "fruits_app/img/rotebeete.png" },
   { "name": "Satsuma", "weight": 100, "color": "orange", "is_ordered": True, "img": "fruits_app/img/satsuma.png" },
   { "name": "Traube", "weight": 5, "color": "lila", "is_ordered": True, "img": "fruits_app/img/traube.png" },
-  { "name": "Ugni-Beere", "weight": 2, "color": "rot", "is_ordered": False, "img": "fruits_app/img/.png" },
-  { "name": "Vanilleschote", "weight": 5, "color": "braun", "is_ordered": False, "img": "fruits_app/img/vanilleschote.png" },
+  { "name": "Ugni-Beere", "weight": 2, "color": "rot", "is_ordered": False, "img": "fruits_app/img/ugnibeere.png" },
+  { "name": "Vanilleschote", "weight": 5, "color": "braun", "is_ordered": False, "img": "fruits_app/img/vanille.png" },
   { "name": "Wassermelone", "weight": 5000, "color": "grün", "is_ordered": True, "img": "fruits_app/img/wassermelone.png" },
-  { "name": "Ximenia", "weight": 30, "color": "orange", "is_ordered": True, "img": "fruits_app/img/ximenia.png" },
+  { "name": "Ximenia", "weight": 30, "color": "gelb", "is_ordered": True, "img": "fruits_app/img/ximenia.png" },
   { "name": "Yuzu", "weight": 120, "color": "gelb", "is_ordered": True, "img": "fruits_app/img/yuzu.png" },
   { "name": "Zitrone", "weight": 120, "color": "gelb", "is_ordered": False, "img": "fruits_app/img/zitrone.png" }
 ]
