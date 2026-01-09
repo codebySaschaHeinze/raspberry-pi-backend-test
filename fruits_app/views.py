@@ -1,6 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
 
 from django.http import JsonResponse
 
@@ -33,4 +32,5 @@ def fruits_list(request):
   { "name": "Yuzu", "weight": 120, "color": "gelb" },
   { "name": "Zitrone", "weight": 120, "color": "gelb" }
 ]
-    return JsonResponse(fruits, safe=False)
+
+    return render(request, "fruits_app/fruitlist.html", {"fruits": fruits})
