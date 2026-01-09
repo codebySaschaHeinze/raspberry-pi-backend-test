@@ -1,40 +1,89 @@
 {% extends "fruits_app/base.html" %}
+{% load static %}
 
 {% block content %}
+<section>
+    <a href="{% url 'info' %}">Was sind Früchte?</a>
     <h2>Alle Früchte</h2>
 
-    <ul>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Gewicht</th>
+            <th>Farbe</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
         {% for fruit in fruits %}
-            <li>
-                {{ fruit.name }} - {{ fruit.weight }}g - {{ fruit.color }}
-            </li>
+        <tr>
+            <td>{{ fruit.name }}</td>
+            <td>{{ fruit.weight }} g</td>
+            <td>{{ fruit.color }}</td>
+            <td>
+                <img src="{% static fruit.img %}" alt="{{ fruit.name }}">
+            </td>
+        </tr>
         {% endfor %}
-    </ul>
+    </tbody>
+</table>
 
 
-    <h2>bestellte Früchte</h2>
+<h2>Bestellte Früchte</h2>
 
-    <ul>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Gewicht</th>
+            <th>Farbe</th>
+            <th>Bild</th>
+        </tr>
+    </thead>
+    <tbody>
         {% for fruit in fruits %}
             {% if fruit.is_ordered %}
-                <li>
-                    {{ fruit.name }} - {{ fruit.weight }}g - {{ fruit.color }}
-                </li>
-            
+            <tr>
+                <td>{{ fruit.name }}</td>
+                <td>{{ fruit.weight }} g</td>
+                <td>{{ fruit.color }}</td>
+                <td>
+                    <img src="{% static fruit.img %}" alt="{{ fruit.name }}">
+                </td>
+            </tr>
             {% endif %}
         {% endfor %}
-    </ul>
+    </tbody>
+</table>
 
-    <h2>nicht bestellte Früchte</h2>
 
-    <ul>
+<h2>Nicht bestellte Früchte</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Gewicht</th>
+            <th>Farbe</th>
+            <th>Bild</th>
+        </tr>
+    </thead>
+    <tbody>
         {% for fruit in fruits %}
             {% if not fruit.is_ordered %}
-                <li>
-                    {{ fruit.name }} - {{ fruit.weight }}g - {{ fruit.color }}
-                </li>
+            <tr>
+                <td>{{ fruit.name }}</td>
+                <td>{{ fruit.weight }} g</td>
+                <td>{{ fruit.color }}</td>
+                <td>
+                    <img src="{% static fruit.img %}" alt="{{ fruit.name }}">
+                </td>
+            </tr>
             {% endif %}
         {% endfor %}
-    </ul>
+    </tbody>
+</table></section>
+
 
 {% endblock %}
