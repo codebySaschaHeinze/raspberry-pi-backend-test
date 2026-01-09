@@ -3,10 +3,12 @@
 {% block content %}
     <h2>Früchte</h2>
 
+    <!-- <a href="{% url 'info' %}">Was sind Früchte?</a> -->
+
     <ul>
         {% for fruit in fruits %}
             <li>
-                {{ fruit.name }} - {{ fruit.weight }} - {{ fruit.color }}
+                {{ fruit.name }} - {{ fruit.weight }}g - {{ fruit.color }}
             </li>
         {% endfor %}
     </ul>
