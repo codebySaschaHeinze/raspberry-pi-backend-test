@@ -34,3 +34,6 @@ def fruits_list(request):
 ]
 
     return render(request, "fruits_app/fruitlist.html", {"fruits": fruits})
+
+def info(request):
+  return render(request, "fruits_app/info.html")
