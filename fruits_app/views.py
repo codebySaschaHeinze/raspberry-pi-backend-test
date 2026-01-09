@@ -5,7 +5,7 @@ from django.http import JsonResponse
 
 def fruits_list(request):
     fruits = [
-  { "name": "Apfel", "weight": 180, "color": "grün", "is_ordered": True},
+  { "name": "Apfel", "weight": 180, "color": "rot", "is_ordered": True},
   { "name": "Banane", "weight": 120, "color": "gelb", "is_ordered": False },
   { "name": "Clementine", "weight": 80, "color": "orange", "is_ordered": True },
   { "name": "Dattel", "weight": 10, "color": "braun", "is_ordered": False },
