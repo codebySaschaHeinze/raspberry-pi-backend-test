@@ -25,6 +25,13 @@ section {
     flex-direction: column;
 }
 
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 h1 {
     color: rgb(200, 200, 200);
     text-align: center;
@@ -81,4 +88,9 @@ table img {
 p {
     color: #fff;
     font-size: 24px;
+}
+
+.img_404 {
+    height: 100vh;
+    width: auto;
 }
